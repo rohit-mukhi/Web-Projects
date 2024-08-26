@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.matemasie-regular {
+    font-family: "Matemasie", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+body {
+    margin: 0.5rem;
+    font-family: "Merriweather", sans-serif;
+    text-align: center;;
+}
+
+h1 {
+    font-size: 10rem;
+    background-image: url(images/shop.png);
+    text-align: left;
+    color: brown;
+    border-radius: 2rem;
+    padding: 1.5rem;
+    margin-left: 200px;
+    max-width: 1600px;
+
+}
+
+nav {
+    border: 2px solid gray;
+    border-radius: 2rem;
+    margin: 0 auto 1rem;
+    max-width: 600px;
+    font-size: 3rem;
+    line-height: 7rem;
+}
+
+h2 {
+    padding: 1rem;
+    background: gold;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    color: black;
+}
+
+ul, li {
+    list-style-type: none;
+    border-top: 2px solid gray;
+}
+
+/* The below is how we select the element within an element*/
+
+ul li a {
+    color:coral;
+    text-decoration: none;
+    display: block;
+}
+
+ul li a:hover, a:focus {
+    color:hsl(16, 100%, 66%, 0.7);
+    text-decoration: none;
+    background-color:rgba(251, 39, 39, 0.907);
+    cursor: pointer;
+}
+
+/*When display was set to block, the whole block acts as link now not just the text*/
+
+ul li:last-child a  {
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+/* This was done to make the background-color change during hovering fit in the border of the nav element.*/
+
+ul li a:active {
+    text-decoration: none;
+    color:crimson;
+}
